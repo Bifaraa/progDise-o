@@ -1,0 +1,41 @@
+.boton__registrar{
+    background: #022855;
+    color: #fff;
+    border: with 5px solid;
+    font-weight: 400;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start:5;
+    grid-row-end: 6;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 30px;
+}
+
+.boton__registrar:hover{
+    background: #d6b861;
+    color: #000;
+}
+
+@media (max-width: 500px){
+    .boton__registrar{
+        height: 35px;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 500px){
+    .boton__registrar{
+        font-size: 20px;
+        height: 40px;
+    }
+}
+
+@media (min-width: 600px){
+    .boton__registrar{
+        font-size: 25px;
+        height: 50px;
+    }
+}

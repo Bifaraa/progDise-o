@@ -1,0 +1,28 @@
+.contactos__informacion{
+    grid-area: informacion;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    flex-wrap: nowrap;
+    color: #fff;
+    font-size: 6px;
+}
+
+@media (min-width: 1000px){
+    .contactos__informacion{
+        line-height: 0.2;
+        font-size: 13px;
+    }
+}
+@media (max-width: 500px){
+    .contenedor__informacion{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        grid-area: contactos;
+        height: 100%;
+        align-items: center;
+    }
+    .contactos__informacion{
+        text-align: justify;
+    }
+}

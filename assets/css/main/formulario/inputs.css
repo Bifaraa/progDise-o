@@ -1,0 +1,64 @@
+.input__1{
+    grid-area: inputs;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start:1;
+    grid-row-end: 2;
+}
+
+.input__2{
+    grid-area: inputs;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start:2;
+    grid-row-end: 3;
+}
+
+.input__3{
+    grid-area: inputs;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start:3;
+    grid-row-end: 4;
+}
+
+.input__4{
+    grid-area: inputs;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start:4;
+    grid-row-end: 5;
+}
+
+
+@media (max-width: 500px){
+    .input__1::placeholder, .input__2::placeholder, .input__3::placeholder, .input__4::placeholder{
+        text-align: center;
+    }
+
+    .input__1, .input__2, .input__3, .input__4{
+        height: 40px;
+    }
+}
+
+@media (min-width: 500px){
+    .input__1, .input__2, .input__3, .input__4{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        height: 30px;
+    }
+
+    .input__1::placeholder, .input__2::placeholder, .input__3::placeholder, .input__4::placeholder {
+        color: transparent;
+    }
+}
+
+@media (min-width: 1000px){
+    .input__1, .input__2, .input__3, .input__4{
+        height: 50px;
+    }
+}
+
+
+
+

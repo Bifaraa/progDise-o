@@ -1,0 +1,24 @@
+.div__contactos{
+    grid-area: contactos;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    font-size: 13px;
+    margin-right: 0px;
+    margin-top: 20px;
+}
+
+
+@media (min-width: 600px){
+    .div__contactos{
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 600px){
+    .div__contactos{
+        font-size: 20px;
+    }
+}
