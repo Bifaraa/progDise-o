@@ -36,8 +36,6 @@
 }
 @media (min-width: 1000px){
     .boton__registrar{
-        width: 18em;
-        margin-left: 5em;
-        margin-right: 5em;
+        width: calc(100% - 1em);
     }
 }
