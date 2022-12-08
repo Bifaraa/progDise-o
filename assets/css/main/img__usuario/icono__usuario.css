@@ -11,5 +11,15 @@
     position: absolute;
     bottom: 0;
     cursor: pointer;
-    border-radius: 0 0 50% 50%;
+    border-radius: 0 0 150% 150%;
+}
+
+@media (min-width: 1000px){
+    .contenedor__photo{
+        display:none;
+    }
+    .img__usuario:hover  .contenedor__photo{
+        display:flex;
+        cursor: pointer;
+    }
 }

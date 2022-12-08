@@ -3,30 +3,11 @@ footer{
     display: grid;
     grid-template-areas:
     "contactos"
-    "informacion"
     "universidad";
-    grid-template-columns: 33% 33% 33%;
-    /*grid-template-rows: 100%;*/
+    grid-template-columns: 50% 50%;
+    /* grid-template-rows: 100%; */
     background:#022855;
     color: #fff;
-    
+    align-items: center;
 }
 
-@media (max-width: 1000px){
-    footer{
-        grid-template-areas:
-        "contactos"
-        "universidad";
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 100%;
-    }
-}
- @media (max-width: 1000px) and (orientation: landscape){
-    footer{
-        grid-template-areas:
-        "contactos"
-        "universidad";
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 100%;
-    }
-}

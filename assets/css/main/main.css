@@ -16,7 +16,7 @@ main{
 
 @media (min-width: 1000px){
     main{
-        background: url('../../img/fondoGrande.jpeg') center / cover no-repeat;
+        background: url('../../img/Fondo escritorio diseño.png') center / cover no-repeat;
         grid-template-columns: 50% 50%;
         grid-template-rows: 40% 60%;
     }

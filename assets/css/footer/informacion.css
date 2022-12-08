@@ -3,19 +3,39 @@
     display:flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    font-size: 12px;
     margin-right: 15%;
-    margin-top: 10px;
     grid-column: 2/3;
     grid-row: 1/2;
 }
 
+.universidad{
+    font-size: 1.2em;
+}
+
+.año{
+    font-size: 1em;
+}
 
 @media (min-width: 1000px){
     .informacion{
-        font-size: 15px;
         line-height: 0.7;
+    }
+    .universidad{
+        font-size: 1.8em;
+    }
+    
+    .año{
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 500px){
+    .universidad{
+        font-size: 13px;
+    }
+    
+    .año{
+        font-size: .8em;
     }
 }
 
