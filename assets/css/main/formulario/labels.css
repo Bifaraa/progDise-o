@@ -93,7 +93,7 @@ label{
 
 @media (min-width: 1000px){
     .label__1, .label__2, .label__3, .label__4{
-        font-size: 35px;
+        font-size: 1.2em;
     }
 }
 }

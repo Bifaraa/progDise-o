@@ -73,7 +73,9 @@
 
 @media (min-width: 1000px){
     .input__1, .input__2, .input__3, .input__4{
-        height: 50px;
+        height: 2em;
+        margin-right: 2em;
+        background-color: rgba(255, 255, 255, .8);
     }
 }
 
