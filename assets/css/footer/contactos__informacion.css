@@ -4,7 +4,7 @@
     grid-column-end: 3;
     flex-wrap: nowrap;
     color: #fff;
-    font-size: 6px;
+    font-size: 9px;
 }
 
 @media (min-width: 1000px){

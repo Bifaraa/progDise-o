@@ -8,6 +8,12 @@ main{
     grid-template-rows: 20% calc(80% - 45px);
 }
 
+@media (max-width: 500px){
+    main{
+        background: url('../../img/fondo movil 1.png') top / cover no-repeat;    
+    }
+}
+
 @media (min-width: 1000px){
     main{
         background: url('../../img/fondoGrande.jpeg') center / cover no-repeat;

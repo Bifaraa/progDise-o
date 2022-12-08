@@ -4,6 +4,8 @@
     grid-column-end: 3;
     grid-row-start:1;
     grid-row-end: 2;
+    font-size: 20px;
+    transition: all 100s eraser-out;
 }
 
 .input__2{
@@ -12,6 +14,8 @@
     grid-column-end: 3;
     grid-row-start:2;
     grid-row-end: 3;
+    font-size: 20px;
+    transition: all 100s eraser-out;
 }
 
 .input__3{
@@ -20,6 +24,8 @@
     grid-column-end: 3;
     grid-row-start:3;
     grid-row-end: 4;
+    font-size: 20px;
+    transition: all 100s eraser-out;
 }
 
 .input__4{
@@ -28,16 +34,24 @@
     grid-column-end: 3;
     grid-row-start:4;
     grid-row-end: 5;
+    font-size: 20px;
+    transition: all 1s eraser-out;
+}
+
+.input__1:focus, .input__2:focus, .input__3:focus, .input__4:focus{
+    border: 3px solid #d6b861;
+    outline: none;
 }
 
 
 @media (max-width: 500px){
     .input__1::placeholder, .input__2::placeholder, .input__3::placeholder, .input__4::placeholder{
         text-align: center;
+        font-size: 20px;
     }
 
     .input__1, .input__2, .input__3, .input__4{
-        height: 40px;
+        height: 2.2em;
     }
 }
 
@@ -45,7 +59,7 @@
     .input__1, .input__2, .input__3, .input__4{
         grid-column-start: 2;
         grid-column-end: 3;
-        height: 30px;
+        height: 3em;
     }
 
     .input__1::placeholder, .input__2::placeholder, .input__3::placeholder, .input__4::placeholder {
