@@ -1,23 +1,21 @@
-/*@import url(https://fonts.googleapis.com);
-@import url(./src/css);
-@import url(./assets/css/normalize.css);
-@import url(./assets/css/reset.css);
-@import url(./assets/font-awesome-4.7.0/css/font-awesome.css);
-@import url(./assets/css/header/header.css);
-@import url(./assets/css/header/menu/sections.css);
+@import url(./normalize.css);
+@import url(./reset.css);
+@import url(../font-awesome-4.7.0/css/font-awesome.css);
+@import url(./header/header.css);
+@import url(./header/menu/sections.css);
 @import url(./header/menu/menu.css);
-@import url(./assets/css/main/main.css);
-@import url(./assets/css/main/img__usuario/img__usuario.css);
+@import url(./main/main.css);
+@import url(./main/img__usuario/img__usuario.css);
 @import url(./main/img__usuario/icono__usuario.css);
-@import url(./main/formulario/formulario/formulario.css);
-@import url(./main/formulario/formulario/labels.css);
-@import url(./main/formulario/formulario/inputs.css);
-@import url(./main/formulario/formulario/boton__registrar.css);
+@import url(./main/formulario/formulario.css);
+@import url(./main/formulario/labels.css);
+@import url(./main/formulario/inputs.css);
+@import url(./main/formulario/boton__registrar.css);
 @import url(./main/visitantes/visitantes.css);
-@import url(./footer/footer/footer.css);
-@import url(./footer/footer/contactos/contactos.css);
-@import url(./footer/footer/informacion.css);
-@import url(.footer/contactos__informacion.css);*/
+@import url(./footer/footer.css);
+@import url(./footer/contactos/contactos.css);
+@import url(./footer/informacion.css);
+@import url(./footer/contactos__informacion.css);
 
 .body{
     font-family: 'Lato', sans-serif;

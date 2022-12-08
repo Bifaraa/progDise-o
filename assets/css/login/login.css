@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* justify-content: center; */
+  background: url("../../img/fondo main.png") center / cover no-repeat;
+}
+
+.informacion{
+    justify-self: start;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    margin: 5em 0 1em 0;
+}
+
+.instrucciones{
+    color: #fff;
+    text-align: justify;
+    margin: 3em;
+}
+
+.ver__mas{
+    color: #fff;
+    margin: 1em;
+    display: none;
+    text-decoration: underline;
+    font-size: 1.5em;
+}
+
+.boton__ingresar{
+    background-color: #012355;
+    padding: 1em 5em;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.boton__ingresar:active{
+    background-color: #d6b861;
+}
+
+.boton__ingresar > span{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+
+
+
+.container {
+  position: relative;
+  max-width: 430px;
+  width: 100%;
+  height: 70%;
+  max-height: 500px;
+  background-color: rgba(0, 0, 0, .7);
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: none;
+}
+
+.container .forms {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  transition: height 0.2s ease;
+}
+
+.container .form {
+  height: 100%;
+  width: 100%;
+  padding: .5em;
+  transition: margin-left 0.18s ease;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.container.active .login {
+  margin-left: -50%;
+  opacity: 0;
+  transition: margin-left 0.18s ease, opacity 0.15s ease;
+}
+
+.cuerpo{
+  display:flex;
+  flex-flow: column nowrap;
+  height: 100%;
+}
+
+.container.active .forms {
+  height: 600px;
+}
+
+.container .form .title {
+  position: relative;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #fff;
+  margin-top: .5em;
+  /* background: url('../../img/universidad-de-caldas-logo.png') center / cover no-repeat; */
+}
+
+.form .input-field {
+  position: relative;
+  height: 20%;
+  max-height: 70px;
+  width: 100%;
+  margin-top: 3em;
+
+}
+
+.input-field input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding-left: 3em; 
+  border: none;
+  outline: none;
+  font-size: 1em;
+  border-bottom: 2px solid #ccc;
+  border-top: 2px solid transparent;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.input-field input:is(:focus, :valid) {
+  border-bottom-color: #d6b861;
+}
+
+.input-field i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 1.5em;
+}
+
+.input-field input:is(:focus, :valid) ~ i {
+  color: #d6b861;
+}
+
+.input-field i.icon {
+  left: 5%;
+}
+
+.input-field i.showHidePw {
+  right: 0;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.form .checkbox-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.checkbox-text .checkbox-content {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-content input {
+  margin: 0 8px -2px 4px;
+  accent-color: #4070f4;
+}
+
+.form .text {
+  color: #ffffffb9;
+  font-size: 14px;
+}
+
+.form a.text {
+  text-decoration: none;
+  color: #4070f4;
+  margin-left: 1.2em;
+}
+
+.form a:hover {
+  text-decoration: underline;
+}
+
+.form .button {
+  margin-top: 35px;
+}
+
+.form .button > input {
+  border: none;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 6px;
+  background-color: #022855;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 1em;
+  text-decoration: none;
+}
+
+.button input:active {
+    transform: translateY(2.5px);
+    background-color: #d6b861;
+}
+
+.boton__login{
+  margin-right: 1em;
+}
+
+@media (min-width: 1000px) {
+
+  .informacion{
+    width: 50%;
+    background-color: rgba(0, 0, 0, .8);
+    border-radius: 10px;
+  }
+
+  /* .button input:hover {
+    background-color: #265df2;
+    transform: translateY(-5px);
+  }
+      */ 
+  
+  .button{
+    position: relative;
+  }
+
+ 
+}

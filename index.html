@@ -5,121 +5,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/normalize.css">
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    
-    <link rel="stylesheet" href="./assets/font-awesome-4.7.0/css/font-awesome.css">
-    <link rel="stylesheet" href="./assets/css/header/header.css">
-    <link rel="stylesheet" href="./assets/css/header/menu/sections.css">
-    <link rel="stylesheet" href="./assets/css/main/main.css">
-    <link rel="stylesheet" href="./assets/css/main/img__usuario/img__usuario.css">
-
-
-    <link rel="stylesheet" href="./assets/css/main/img__usuario/icono__usuario.css">
-    <link rel="stylesheet" href="./assets/css/main/formulario/formulario.css">
-    <link rel="stylesheet" href="./assets/css/main/formulario/labels.css">
-    <link rel="stylesheet" href="./assets/css/main/formulario/inputs.css">
-    <link rel="stylesheet" href="./assets/css/main/formulario/boton__registrar.css">
-    <link rel="stylesheet" href="./assets/css/footer/footer.css">
-    <link rel="stylesheet" href="./assets/css/footer/contactos/contactos.css">
-    <link rel="stylesheet" href="./assets/css/footer/informacion.css">
-    <link rel="stylesheet" href="./assets/css/main/visitantes/visitantes.css">
-    <link rel="stylesheet" href="./assets/css/footer/contactos__informacion.css">
-    <link rel="stylesheet" href="./assets/css/header/menu/menu.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="./assets/css/login/login.css">
+    <title>Login & Registration form</title>
 </head>
 
-<body class="body">
-    <header class="header">
-        <div class="section1">
-            <i class="fa fa-users fa-2x icono_section1" aria-hidden="true"></i>
-            <h3>Visitantes</h3>
-        </div>
-        <div class="section2">
-            <p>0</p>
-            <h3>Actuales</h3>
-        </div>
-        <div class="section3">
-            <label for="hamburguesa">
-                <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-            </label>
-            <h3>Menú</h3>
-            <input type="checkbox" name="" id="hamburguesa">
-            <div class="lista__opciones">
-                <label for="hamburguesa">
-                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
-                </label>
-                <a href="#" class="opciones">Historial de Ubicación</a>
-                <a href="#" class="opciones">Buscar Persona</a>
-                <a href="#" class="opciones">Ver estadisticas</a>
-                <a href="#" class="opciones">Cerrar Sesión</a>
+<body>
+    <div class="informacion">
+        <p class="instrucciones">
+            Usted esta haciendo a una herramienta de la universidad de Caldas.
+            Que tiene como objetivo el registro de usuarios no esutdaite, ni docente, ni administrativo...
+            al campus universitario Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem saepe pariatur, commodi in, earum repellendus eum dolor sapiente veniam impedit quisquam cum error fugiat, ullam tempore eligendi incidunt iusto velit.
+        </p>
+        <span class="ver__mas">
+            Ver Instrucciones ...
+        </span>
+    </div>
+    <div class="boton__ingresar">
+        <span class="">Ingresar a plataforma</span>
+    </div>
+    <div class="container">
+        <div class="forms">
+            <div class="form login">
+                <span class="title">Universidad De Caldas</span>
+                <span class="title title__login" > Login</span>
+                <form class="cuerpo" action="#">
+                    <div class="input-field">
+                        <input type="text" placeholder="Ingrese su email" required data-input-form>
+                        <i class="uil uil-envelope-minus icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Ingrese su contraseña" required data-input-form>
+                        <i class="uil uil-padlock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="logCheck">
+                            <label for="logCheck" class="text">Recordarme</label>
+                        </div>
+                        <a href="#" class="text">Olvido su contraseña?</a>
+                    </div>
+
+                    <div class=" button">
+                        <input class="boton__login" type="button" value="Ingresar">
+                    </div>
+                </form>
             </div>
         </div>
-        <div class="section4">
-            <img src="./assets/img/universidad-de-caldas-logo.png" alt="Logo U de Caldas">
-        </div>
-        <div class="section5">
-            <div class="buscar">
-                <label for="buscar"><i class="fa fa-search" aria-hidden="true"></i></label>
-                <input type="text" name="" id="buscar" placeholder="Buscar">
-            </div>
-        </div>
-        <div class="section6">
-            <h3>Informe por mapas</h3>
-        </div>
-        <div class="section7">
-            <h3>Cerrar Sesión</h3>
-        </div>
-    </header>
-    <main>
-        <div class="img__usuario">
-            <i class="fa fa-user-o fa-2x icono" aria-hidden="true"></i>
-            <div class="contenedor__photo">
-                <i class="fa fa-camera icono__usuario" aria-hidden="true"></i>
-            </div>
-        </div>
-        <div class="visitantes">
-            <i class="fa fa-users" aria-hidden="true"></i>
-            <h3>Visitantes actuales</h3>
-            <p>0</p>
-        </div>
-        <div class="formulario">
-            <label class="label__1" for="nombre">Nombre</label>
-            <input class="input__1" type="text" name="nombre" id="nombre" placeholder="Nombre">
-            <label class="label__2" for="cedula">Cédula</label>
-            <input class="input__2" type="text" name="cedula" id="cedula" placeholder="Cedula">
-            <label class="label__3" for="celular">Celular</label>
-            <input class="input__3" type="text" name="celular" id="celular" placeholder="Celular">
-            <label class="label__4" for="codigo">Código</label>
-            <input class="input__4" type="text" name="codigo" id="codigo" placeholder="Código">
-            <!-- <input class="boton__registrar" type="button" value="Registrar"> -->
-            <div class="boton__registrar">
-                <a href="">Registrar</a>
-            </div>
-        </div>
-        <div class="fondo__formulario">
-        </div>
-    </main>
-    <footer>
-        <div class="contenedor__informacion">
-            <div class="div__contactos">
-                <h3 class="contactos">Contactos</h3>
-            </div>
-            <div class="contactos__informacion">
-                <p>Correo Electronico: xxxx@xxx.com</p>
-                <p>Número De Contacto: 00111-465-5</p>
-                <p>Dirección: Kra 897-6484-2</p>
-            </div> 
-        </div>
-        <div class="informacion">
-            <h3 class="universidad">Universidad De Caldas</h3>
-            <p class="año">2020</p>
-        </div>
-    </footer>
+    </div>
+
+    <script type=module src="./assets/js/script.js"></script>
+
 </body>
 
 </html>
