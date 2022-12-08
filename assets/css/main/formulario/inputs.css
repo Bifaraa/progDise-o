@@ -6,6 +6,7 @@
     grid-row-end: 2;
     font-size: 20px;
     transition: all 100s eraser-out;
+    border-radius: 10px;
 }
 
 .input__2{
@@ -16,6 +17,7 @@
     grid-row-end: 3;
     font-size: 20px;
     transition: all 100s eraser-out;
+    border-radius: 10px;
 }
 
 .input__3{
@@ -26,6 +28,7 @@
     grid-row-end: 4;
     font-size: 20px;
     transition: all 100s eraser-out;
+    border-radius: 10px;
 }
 
 .input__4{
@@ -36,6 +39,7 @@
     grid-row-end: 5;
     font-size: 20px;
     transition: all 1s eraser-out;
+    border-radius: 10px;
 }
 
 .input__1:focus, .input__2:focus, .input__3:focus, .input__4:focus{

@@ -10,6 +10,7 @@
     margin-left: 10px;
     margin-right: 10px;
     height: 2.5em;
+    border-radius: 10px;
 }
 
 .boton__registrar:hover{

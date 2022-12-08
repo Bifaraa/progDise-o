@@ -17,6 +17,7 @@
     box-shadow: 10px 7px 10px black;
     margin-button: 15px;
     border: black 2px solid;
+    position: relative;
 }
 
 @media (min-width: 1000px){
