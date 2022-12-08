@@ -12,7 +12,16 @@ footer{
     
 }
 
-@media (max-width: 500px){
+@media (max-width: 1000px){
+    footer{
+        grid-template-areas:
+        "contactos"
+        "universidad";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%;
+    }
+}
+ @media (max-width: 1000px) and (orientation: landscape){
     footer{
         grid-template-areas:
         "contactos"

@@ -26,6 +26,12 @@
     "header"
     "main"
     "footer";
-    grid-template-rows: 10vh 75vh 15vh;
+    grid-template-rows: 10vh 75vh 20vh;
     position:relative;
+}
+
+@media (max-width: 1000px) and (orientation: landscape){
+    .body{
+        grid-template-rows: 20vh 150vh auto;
+    }
 }

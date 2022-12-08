@@ -11,23 +11,19 @@
     grid-row: 1/2;
 }
 
-@media (max-width: 500px){
-    .informacion{
-        
-    }
-}
-
-@media (min-width: 600px){
-    .informacion{
-        font-size: 12px;
-        grid-column-start: 3;
-        grid-column-end: 4;
-    }
-}
 
 @media (min-width: 1000px){
     .informacion{
         font-size: 15px;
         line-height: 0.7;
+    }
+}
+
+
+@media (max-width: 1000px) and (orientation: landscape){
+    .informacion{
+        font-size: 12px;
+        grid-column-start: 2;
+        grid-column-end: 3;
     }
 }

@@ -199,6 +199,11 @@
     .section6 > h3:hover, .section7 > h3:hover{
         text-decoration: underline #d6b861 5px;
     }
+}
 
-
+@media (max-width: 1000px) and (orientation: landscape){
+    .lista__opciones{
+        top: 2em;
+        right: 1.5em;
+    }
 }
