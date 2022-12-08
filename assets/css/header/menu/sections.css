@@ -51,7 +51,7 @@
     display: none;
     position: absolute;
     height: calc(100vh - 3em);
-    width: calc(60vw - 3em);
+    width: calc(80vw - 3em);
     background-color: #012355;
     bottom: 1.5em;
     right: 1.5em;
