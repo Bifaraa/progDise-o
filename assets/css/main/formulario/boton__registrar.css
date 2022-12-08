@@ -13,7 +13,7 @@
     border-radius: 10px;
 }
 
-.boton__registrar:hover{
+.boton__registrar:active{
     background: #d6b861;
     color: #000;
 }
@@ -37,5 +37,9 @@
 @media (min-width: 1000px){
     .boton__registrar{
         width: calc(100% - 1em);
+    }
+    .boton__registrar:hover{
+        background: #d6b861;
+        color: #000;
     }
 }
