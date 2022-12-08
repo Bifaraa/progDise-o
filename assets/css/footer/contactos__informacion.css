@@ -41,6 +41,7 @@
         grid-area: contactos;
         height: auto;
         align-items: center;
+        font-size: 1.3em;
     }
     .div__contactos{
         align-items: center;
