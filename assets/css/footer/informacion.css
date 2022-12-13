@@ -1,0 +1,49 @@
+.informacion{
+    grid-area:universidad;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 15%;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.universidad{
+    font-size: 1.2em;
+}
+
+.año{
+    font-size: 1em;
+}
+
+@media (min-width: 1000px){
+    .informacion{
+        line-height: 0.7;
+    }
+    .universidad{
+        font-size: 1.8em;
+    }
+    
+    .año{
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 500px){
+    .universidad{
+        font-size: 13px;
+    }
+    
+    .año{
+        font-size: .8em;
+    }
+}
+
+
+@media (max-width: 1000px) and (orientation: landscape){
+    .informacion{
+        font-size: 12px;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+}

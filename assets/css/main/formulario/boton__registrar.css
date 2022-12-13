@@ -1,0 +1,76 @@
+.boton__registrar{
+    background: #022855;
+    /* background-color: transparent; */
+    color: #fff;
+    border: with 5px solid;
+    font-weight: 400;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start:5;
+    grid-row-end: 6;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 2.5em;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton__registrar:active{
+    background: #d6b861;
+    color: #000;
+}
+
+.boton__registrar > a{
+    color: #fff;
+    z-index: 3;
+}
+
+@media (max-width: 500px){
+    .boton__registrar{
+        height: 3em;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 500px){
+    .boton__registrar{
+        font-size: 20px;
+        height: 3em;
+    }
+}
+@media (min-width: 1000px){
+    .boton__registrar{
+        width: calc(100% - 1em);
+        position: relative;
+    }
+   /*  .boton__registrar:hover{
+        background: #d6b861;
+        color: #000;
+    } */
+    .boton__registrar::after {
+        content: "";
+        transition: all 0.3s linear;
+        position: absolute;
+        width: 0;
+        height: 100%;
+        bottom: 0;
+        left: 0;
+        background: #d6b861;
+        z-index: 2;
+        cursor: pointer;
+    }
+    
+    .boton__registrar:hover > .boton__registrar a{
+        color: #fff;
+    }
+    
+    .boton__registrar:hover::after{
+        width: 100%;
+        border-radius: 10px;
+    }
+}

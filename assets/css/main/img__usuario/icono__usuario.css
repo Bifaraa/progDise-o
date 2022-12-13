@@ -1,0 +1,25 @@
+.icono__usuario{
+    color: #fff;
+    margin-top: .5em;
+}
+
+.contenedor__photo{
+    display: block;
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+    border-radius: 0 0 150% 150%;
+}
+
+@media (min-width: 1000px){
+    .contenedor__photo{
+        display:none;
+    }
+    .img__usuario:hover  .contenedor__photo{
+        display:flex;
+        cursor: pointer;
+    }
+}

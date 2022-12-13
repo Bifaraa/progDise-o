@@ -1,0 +1,31 @@
+.header{
+    background: #012355;
+    font-size: 13px;
+    display: grid;
+    grid-area: header;
+    grid-template-areas:
+    "section1"
+    "section2"
+    "section3";
+    grid-template-columns:  repeat(3, 1fr); 
+    grid-template-rows: 100%;
+    color:#fff;
+}
+
+@media (min-width: 1000px){
+    .header{
+        font-size: 18px;
+        grid-template-areas:
+        "logo"
+        "buscar"
+        "informe"
+        "cerrar";
+        grid-template-columns: 20% 40% 20% 20%;
+        grid-template-rows: 100%;
+        color: #fff;
+    }
+    
+}
+
+
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="./assets/css/login/login.css">
+    <title>Login & Registration form</title>
+</head>
+
+<body>
+    <div class="informacion">
+        <p class="instrucciones">
+            Usted esta haciendo a una herramienta de la universidad de Caldas.
+            Que tiene como objetivo el registro de usuarios no esutdaite, ni docente, ni administrativo...
+        </p>
+        <span class="ver__mas">
+            Ver Instrucciones ...
+        </span>
+    </div>
+    <div class="boton__ingresar">
+        <span class="">Ingresar a plataforma</span>
+    </div>
+    <div class="container">
+        <div class="forms">
+            <div class="form login">
+                <span class="title">Universidad De Caldas</span>
+                <span class="title title__login" > Login</span>
+                <form class="cuerpo" action="#">
+                    <div class="input-field">
+                        <input type="text" placeholder="Ingrese su email" required data-input-form>
+                        <i class="uil uil-envelope-minus icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Ingrese su contraseña" required data-input-form>
+                        <i class="uil uil-padlock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="logCheck">
+                            <label for="logCheck" class="text">Recordarme</label>
+                        </div>
+                        <a href="#" class="text">Olvido su contraseña?</a>
+                    </div>
+
+                    <div class=" button">
+                        <input class="boton__login" type="button" value="Ingresar">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script type=module src="./assets/js/script.js"></script>
+
+</body>
+
+</html>

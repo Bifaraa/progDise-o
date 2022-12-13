@@ -1,0 +1,35 @@
+@import url(./normalize.css);
+@import url(./reset.css);
+@import url(../font-awesome-4.7.0/css/font-awesome.css);
+@import url(./header/header.css);
+@import url(./header/menu/sections.css);
+@import url(./header/menu/menu.css);
+@import url(./main/main.css);
+@import url(./main/img__usuario/img__usuario.css);
+@import url(./main/img__usuario/icono__usuario.css);
+@import url(./main/formulario/formulario.css);
+@import url(./main/formulario/labels.css);
+@import url(./main/formulario/inputs.css);
+@import url(./main/formulario/boton__registrar.css);
+@import url(./main/visitantes/visitantes.css);
+@import url(./footer/footer.css);
+@import url(./footer/contactos/contactos.css);
+@import url(./footer/informacion.css);
+@import url(./footer/contactos__informacion.css);
+
+.body{
+    font-family: 'Lato', sans-serif;
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+    grid-template-rows: 15vh 80vh 20vh;
+    position:relative;
+}
+
+@media (max-width: 1000px) and (orientation: landscape){
+    .body{
+        grid-template-rows: 20vh 150vh 20vh;
+    }
+}

@@ -1,0 +1,260 @@
+.section1 {
+  gird-area: section1;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  margin: 0.9em 1em 0.9em 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section2 {
+  gird-area: section2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  margin: 0.9em 0 0.9em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section3 {
+  gird-area: section3;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  margin: 0.9em 3em 0.9em 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section4,
+.section5,
+.section6,
+.section7 {
+  display: none;
+}
+
+.section1 > h3,
+.section2 > h3,
+.section3 > h3 {
+  font-weight: 300;
+}
+
+.section2 > p {
+  margin: 0;
+  padding: 0;
+  font-weight: 900;
+  font-size: 24px;
+}
+
+.lista__opciones {
+  display: none;
+  position: absolute;
+  height: calc(100vh - 3em);
+  width: 100vw;
+  background-color: #012355;
+  top: 2em;
+  right: 0;
+  z-index: 2;
+  box-shadow: -150px 20px 20px rgba(0, 0, 0, 0.5);
+}
+
+.section3 > input {
+  display: none;
+}
+
+.section3 input:checked + .lista__opciones {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+
+.lista__opciones > a {
+  margin-top: 2em;
+  margin-left: 0em;
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 1em;
+}
+
+.lista__opciones > a:after {
+  bottom: 0;
+  content: "";
+  display: block;
+  width: 0;
+  height: 0.2em;
+  background-color: #d6b861;
+  transition: all 0.3s;
+}
+
+.lista__opciones > a:active:after {
+  width: 70%;
+}
+
+.lista__opciones label > i {
+  display: block;
+  margin-top: 2em;
+  margin-left: 1em;
+  font-size: 2.2em;
+  color: #fff;
+}
+
+.lista__opciones label {
+  width: 50%;
+}
+
+.lista__opciones > i:active,
+.lista__opciones {
+  display: none;
+}
+
+.section1 > h3:active,
+.section2 > h3:active,
+.section3 > h3:active {
+  font-weight: 400;
+  text-decoration: underline #d6b861 3px;
+}
+
+@media (min-width: 500px) {
+  .section1 > h3,
+  .section2 > h3,
+  .section3 > h3,
+  .section4 > h3 {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .section1,
+  .section2,
+  .section3 {
+    display: none;
+  }
+
+  .section4 {
+    gird-area: logo;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin-left: 20%;
+  }
+
+  .section4 > img {
+    height: 80px;
+    width: 80px;
+  }
+
+  .section5 {
+    grid-area: buscar;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .buscar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+    border: 0.5px #fff solid;
+    border-radius: 10px;
+    padding: 0 2em;
+  }
+
+  .buscar > input {
+    font-size: 1.5em;
+    width:100%;
+    background-color: rgba(1, 35, 85, 0.2);
+    border:none;
+    color: #fff;
+  }
+
+  .buscar > input:focus{
+    border:none;
+    outline: none;
+  }
+
+  .buscar > input::placeholder{
+
+  }
+
+  .buscar > label i {
+    margin-right: 50px;
+    font-size: 23px;
+    opacity: 0.5;
+  }
+
+  .section6 {
+    grid-area: informe;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30%;
+    cursor: pointer;
+  }
+
+  .section7 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20%;
+    cursor: pointer;
+  }
+
+  .section6 > h3:after {
+    bottom: 0;
+    content: "";
+    display: block;
+    width: 0;
+    height: 0.2em;
+    background-color: #d6b861;
+    transition: all 0.3s;
+  }
+
+  .section6 > h3:hover:after {
+    width: 100%;
+  }
+  .section7 > h3:after {
+    bottom: 0;
+    content: "";
+    display: block;
+    width: 0;
+    height: 0.2em;
+    background-color: #d6b861;
+    transition: all 0.3s;
+  }
+
+  .section7 > h3:hover:after {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1000px) and (orientation: landscape) {
+  .lista__opciones {
+    top: 2em;
+    right: 1.5em;
+    height: 150vh;
+  }
+}

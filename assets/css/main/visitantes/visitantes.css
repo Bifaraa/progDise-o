@@ -1,0 +1,66 @@
+.visitantes{
+    display:none;
+}
+
+@media (min-width: 1000px){
+    .visitantes{
+        background: rgba(0,0,0, 0.7);
+        display:grid;
+        grid-area:imgagen_usuario;
+        grid-template-areas:
+        "visitantes"
+        "numero";
+        grid-column-start: 2;
+        grid-column-end:3;
+        grid-row-start:2;
+        grid-row-end:3;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        margin: 5% 10%;
+        color: #fff;
+        box-shadow: 10px 10px 5px black;
+        backdrop-filter: blur(3px);
+        border: #fff 1px solid;
+        height: auto;
+        width:60%;
+        justify-self: center;
+        border-radius: 10px;
+    }
+
+    .visitantes > i{
+        grid-area:visitantes;
+        grid-column-start: 1;
+        grid-column-end:2;
+        grid-row-start:1;
+        grid-row-end:2;
+        font-size: 5em;
+        text-align: center;
+        margin-top: 15%;
+        margin-left: 20%;
+    }
+
+    .visitantes > h3{
+        grid-area:visitantes;
+        grid-column-start: 1;
+        grid-column-end:2;
+        grid-row-start:2;
+        grid-row-end:3;
+        font-size: 1.5em;
+        text-align: center;
+        margin-left: 20%;
+        margin-top: 15%;
+    }
+
+    .visitantes > p{
+        grid-area:numero;
+        grid-column-start: 2;
+        grid-column-end:3;
+        grid-row-start:1;
+        grid-row-end:3;
+        font-size: 8em;
+        text-align: center;
+        margin: 0px;
+        text-align: center;
+        margin: 15%       
+    }
+}

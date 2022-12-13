@@ -1,0 +1,34 @@
+.img__usuario{
+    grid-area:imagen_usuario;
+    grid-row-start:1;
+    grid-row-end: 2;
+    background: #fff;
+    border-radius: 50%;
+    width: 76.25px;
+    height: 76.25px;
+    text-align: center;
+    //margin-top: 30px;
+    align-items:center;
+    justify-self: center;
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 10px 7px 10px black;
+    margin-button: 15px;
+    border: black 2px solid;
+    position: relative;
+}
+
+@media (min-width: 1000px){
+    .img__usuario{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        width: 10em;
+        height: 10em;
+        margin-top: 5%;
+    }
+
+    .img__usuario > i{
+        font-size: 6em;
+    }
+}
