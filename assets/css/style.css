@@ -16,21 +16,20 @@
 @import url(./footer/contactos/contactos.css);
 @import url(./footer/informacion.css);
 @import url(./footer/contactos__informacion.css);
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;700;800&display=swap");
 
-.body {
-  font-family: "Work Sans", sans-serif;
-  display: grid;
-  grid-template-areas:
+.body{
+    font-family: 'Lato', sans-serif;
+    display: grid;
+    grid-template-areas:
     "header"
     "main"
     "footer";
-  grid-template-rows: 15vh 80vh 20vh;
-  position: relative;
+    grid-template-rows: 15vh 80vh 20vh;
+    position:relative;
 }
 
-@media (max-width: 1000px) and (orientation: landscape) {
-  .body {
-    grid-template-rows: 20vh 150vh 20vh;
-  }
+@media (max-width: 1000px) and (orientation: landscape){
+    .body{
+        grid-template-rows: 20vh 150vh 20vh;
+    }
 }
