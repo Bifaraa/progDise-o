@@ -54,7 +54,7 @@
 .lista__opciones {
   display: none;
   position: absolute;
-  height: 60vh;
+  height: calc(100vh - 3em);
   width: calc(80vw - 3em);
   background-color: #012355;
   top: 2em;
@@ -119,12 +119,6 @@
 .section3 > h3:active {
   font-weight: 400;
   text-decoration: underline #d6b861 3px;
-}
-
-@media (max-width: 400px ){
-  .lista__opciones{
-    height: 75vh;
-  }
 }
 
 @media (min-width: 500px) {
@@ -262,6 +256,5 @@
     top: 2em;
     right: 1.5em;
     height: 150vh;
-    width: 40vw;
   }
 }

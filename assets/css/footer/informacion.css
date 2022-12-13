@@ -42,7 +42,7 @@
 
 @media (max-width: 1000px) and (orientation: landscape){
     .informacion{
-        font-size: 1.5em;
+        font-size: 12px;
         grid-column-start: 2;
         grid-column-end: 3;
     }

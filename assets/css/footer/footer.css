@@ -9,11 +9,6 @@ footer{
     background:#022855;
     color: #fff;
     align-items: center;
-    height: 30vh;
+    height: 100%;
 }
 
-@media (max-width: 1000px) and (orientation: landscape) {
-    footer{
-        height: 50vh;
-    }
-}
